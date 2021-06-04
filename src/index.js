@@ -8,7 +8,7 @@ for(i = 0; i < 48; i++) {
 
   itemElement.setAttribute('class', 'item item-' + i);
 
-  itemElement.innerHTML = `<span class="shadow-1"></span><span class="shadow-2"></span>`
+  itemElement.innerHTML = `<h1>Block No ${i}</h1><span class="shadow-1"></span><span class="shadow-2"></span>`
 
   document.querySelector('#grid').appendChild(itemElement)
 }
