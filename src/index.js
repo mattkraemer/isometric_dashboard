@@ -1,12 +1,14 @@
 import _ from 'lodash';
+import './style.scss'
 
-function component() {
-  const element = document.createElement('div');
+let i;
 
-  // Lodash, now imported by this script
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+for(i = 0; i < 48; i++) {
+  const itemElement = document.createElement('div');
 
-  return element;
+  itemElement.setAttribute('class', 'item item-' + i);
+
+  itemElement.innerHTML = `<span class="shadow-1"></span><span class="shadow-2"></span>`
+
+  document.querySelector('#grid').appendChild(itemElement)
 }
-
-document.body.appendChild(component());
