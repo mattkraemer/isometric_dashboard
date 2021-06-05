@@ -73,11 +73,12 @@ a {
     height: calc(100vw / 6);
     h1 {
       opacity: .25;
+      margin: 0;
     }
     &:hover {
       background-color: $itemHoverBg;
       transform: translateY(-25px) translateX(25px);
-      transition: all .35s linear;
+      z-index: 1050;
       .shadow-1, .shadow-2 {
         opacity: 1;
       }
