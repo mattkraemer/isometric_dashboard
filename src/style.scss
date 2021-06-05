@@ -20,6 +20,7 @@ html, body {
 
 body {
   font-family: $fontFamily;
+  -webkit-font-smoothing: antialiased;
 }
 
 a {
@@ -42,11 +43,14 @@ a {
   header {
     padding: 2rem;
     background-color: $sidebarHeader;
+    span {
+      font-weight: bold;
+    }
   }
   nav {
     padding: 2rem;
     display: grid;
-    gap: 1rem;
+    gap: 0.5rem;
     a {
       display: block;
       text-decoration: none;
