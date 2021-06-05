@@ -12,3 +12,21 @@ for(i = 0; i < 48; i++) {
 
   document.querySelector('#grid').appendChild(itemElement)
 }
+
+const addItemContent = (item, count) => {
+  const itemListParent = document.createElement('ul');
+  itemListParent.setAttribute('class', 'itemListParent')
+  const targetElement = document.querySelector('.item-' + item).appendChild(itemListParent);
+
+  for(i = 0; i < count; i++) {
+    const itemListChild = document.createElement('li');
+    itemListChild.setAttribute('class', 'itemListChild');
+    itemListChild.innerHTML = `<span>Item Child Content</span>`;
+
+    let i;
+    
+    targetElement.appendChild(itemListChild)
+  }
+}
+
+addItemContent(21, 3)
